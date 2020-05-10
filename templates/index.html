@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+   <head>
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>IPL Genie</title>
+   </head>
+   <body class="text-center">
+      <form class="form-signin" method="POST" action="{{ url_for('predict') }}">
+      <h1 class="h3 mb-3 font-weight-normal">Enter the values Accurately</h1>
+
+      <label for="TeamratingA" class="sr-only">Team A rating</label>
+      <input type="number" step="any" id="TeamratingA" name="TeamA" class="form-control" placeholder="Team A rating" required autofocus>
+      <label for="TeamratingB" class="sr-only">Team B rating</label>
+      <input type="number" step="any" id="TeamratingB" name="TeamB" class="form-control" placeholder="Team B rating" required>
+
+      <label for="HomeGround">Choose HomeGround:</label>
+      <select id="HomeGround" name="Homeground">
+         <option value=1>Team A</option>
+         <option value=0>Team B</option>
+         <option value=0.5>Neutral</option>
+      </select>
+      <label for="Toss">Choose Toss Winner:</label>
+      <select id="Toss" name="Toss">
+         <option value=1>Team A</option>
+         <option value=0>Team B</option>
+      </select>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Predict</button>
+   </body>
+</html>
