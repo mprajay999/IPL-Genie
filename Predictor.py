@@ -1,5 +1,7 @@
 import pickle
 from sklearn.linear_model import LogisticRegression
+import warnings
+
 
 infile = open('Model.pkl','rb')
 Model = pickle.load(infile)

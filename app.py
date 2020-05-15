@@ -15,7 +15,7 @@ def predict():
     H=request.form.get('Homeground')
     T=request.form.get('Toss')
     P=Predict(float(A),float(B),float(H),float(T))
-    return '{}'.format(P)
+    return render_template('Message.html',p=P)
 
 
 if __name__ == '__main__':
