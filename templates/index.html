@@ -22,9 +22,9 @@
 	<form class="form-signin" method="POST" action="{{ url_for('predict') }}">
 		<h1 class="h3 mb-3 font-weight-normal">Enter the values Accurately</h1>
 		<label for="TeamratingA" class="sr-only">Team A rating</label>
-		<input type="number" step="any" id="TeamratingA" name="TeamA" class="form-control" placeholder="Team A rating" required autofocus>
+		<input type="number" step="0.1" id="TeamratingA" min="0" max="2" name="TeamA" class="form-control" placeholder="Team A rating" required autofocus>
 		<label for="TeamratingB" class="sr-only">Team B rating</label>
-		<input type="number" step="any" id="TeamratingB" name="TeamB" class="form-control" placeholder="Team B rating" required>
+		<input type="number" step="0.1" id="TeamratingB" min="0" max="2" name="TeamB" class="form-control" placeholder="Team B rating" required>
 		<label for="HomeGround">Choose HomeGround:</label>
 		<select id="HomeGround" name="Homeground">
 			<option value=1>Team A</option>
