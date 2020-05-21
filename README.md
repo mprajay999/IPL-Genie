@@ -6,14 +6,14 @@ match Using Machine Learning (Logistic regression).
 Live on http://ipl-genie.herokuapp.com/
 
 
-# Machine Learning Model:
+# Machine Learning Model
 Used Logistic Regression Algorithm to Train the Model using IPL Dataset Sourced from Kaggle.
 
 Test accuracy of 65-70%
 
 
 
-# Team Rating Calculation:
+# Team Rating Calculation
 
 Team A rating = (1-(0.1*position of team A on points table))+(No. of matches Team A has won Against Team B in the past / Total no. of Matches Played Between Team A and Team B)
 
