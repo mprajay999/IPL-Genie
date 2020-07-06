@@ -21,22 +21,27 @@
 
 <body class="text-center">
 	<form class="form-signin" method="POST" action="{{ url_for('predict') }}">
-		<h1 class="h3 mb-3 font-weight-normal">Enter the values Accurately</h1>
+		<h1 class="h3 mb-3 font-weight-normal">IPL Genie</h1>
+        <br>
 		<label for="TeamratingA" class="sr-only">Team A rating</label>
 		<input type="number" step="0.1" id="TeamratingA" min="0" max="2" name="TeamA" class="form-control" placeholder="Team A rating" required autofocus>
+        <br>
 		<label for="TeamratingB" class="sr-only">Team B rating</label>
 		<input type="number" step="0.1" id="TeamratingB" min="0" max="2" name="TeamB" class="form-control" placeholder="Team B rating" required>
+        <br>
 		<label for="HomeGround">Choose HomeGround:</label>
 		<select id="HomeGround" name="Homeground">
 			<option value=1>Team A</option>
 			<option value=0>Team B</option>
 			<option value=0.5>Neutral</option>
 		</select>
+        <br><br>
 		<label for="Toss">Choose Toss Winner:</label>
 		<select id="Toss" name="Toss">
 			<option value=1>Team A</option>
 			<option value=0>Team B</option>
 		</select>
+        <br><br>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">Predict</button>
 	    <br>
 			<p>
