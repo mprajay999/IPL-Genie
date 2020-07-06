@@ -45,13 +45,27 @@ html,
          border-top-left-radius: 0;
          border-top-right-radius: 0;
          }
+/* Footer */
+.footer{
+	background-color: #E9E9E9;
+	color: #000000;
+	padding: 12px;
+    text-align: center;
+}
 
-        .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   text-align: center;
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #a6a19a;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 100;
 }
         .footer1{
    position: fixed;

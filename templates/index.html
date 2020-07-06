@@ -13,6 +13,7 @@
 </style>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link  rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>IPL Genie</title>
@@ -42,12 +43,15 @@
                 <a href="{{ url_for('calculate') }}">Click Here to Calculate Rating</a>
 			</p>
 
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/mprajay999/IPL-Genie"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/mprajay999"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Prajay.</p>
+       </div>
 
-        <div class="footer1">
-			<p>
-               <a href="https://github.com/mprajay999/IPL-Genie">Open Sourced on Github</a>
-			</p>
-		</div>
 
 </body>
 
