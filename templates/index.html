@@ -29,14 +29,14 @@
 		<label for="TeamratingB" class="sr-only">Team B rating</label>
 		<input type="number" step="0.1" id="TeamratingB" min="0" max="2" name="TeamB" class="form-control" placeholder="Team B rating" required>
         <br>
-		<label for="HomeGround">Choose HomeGround:</label>
+		<label for="HomeGround">HomeGround:</label>
 		<select id="HomeGround" name="Homeground">
 			<option value=1>Team A</option>
 			<option value=0>Team B</option>
 			<option value=0.5>Neutral</option>
 		</select>
         <br><br>
-		<label for="Toss">Choose Toss Winner:</label>
+		<label for="Toss">Toss:</label>
 		<select id="Toss" name="Toss">
 			<option value=1>Team A</option>
 			<option value=0>Team B</option>
@@ -46,7 +46,7 @@
 	    <br>
 
 			<p>
-                <a href="{{ url_for('calculate') }}">Click Here to Calculate Rating</a>
+                <a href="{{ url_for('calculate') }}">Guide to Calculate Rating</a>
 			</p>
 
         <!-- Footer -->
